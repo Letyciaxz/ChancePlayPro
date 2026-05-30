@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChancePlay - Histórico</title>
+
+  <link rel="stylesheet" href="css/historico.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="background-grid"></div>
+
+  <header class="header">
+    <div class="logo">
+      Chance <span>Play</span>
+    </div>
+
+    <div class="nav-buttons">
+      <a href="menu.html" class="nav-btn">Jogos</a>
+      <a href="historico.html" class="nav-btn active">Histórico</a>
+    </div>
+  </header>
+
+  <main class="history-container">
+
+    <div class="title-area">
+      <h1>Histórico</h1>
+      <p>Seus cálculos recentes</p>
+    </div>
+
+    <div id="listaHistorico"></div>
+
+    <button class="clear-btn" onclick="limparHistorico()">
+      LIMPAR HISTÓRICO
+    </button>
+
+  </main>
+
+  <script>
+    const lista = document.getElementById("listaHistorico");
+
+    const historico = JSON.parse(localStorage.getItem("historico")) || [];
+
+    if (historico.length === 0) {
+      lista.innerHTML = `
+        <div class="empty-history">
+          <div class="history-icon">📊</div>
+          <h2>Nenhum cálculo ainda</h2>
+          <p>Faça um cálculo para ver aqui</p>
+        </div>
+      `;
+    } else {
+      lista.innerHTML = historico.map(item => `
+        <div class="history-card">
+          <h2>${item.jogo}</h2>
+          <p><strong>Tipo:</strong> ${item.tipo}</p>
+          <p><strong>Resultado:</strong> ${item.resultado}</p>
+          <p><strong>Probabilidade:</strong> ${item.probabilidade}</p>
+          <span>${item.data}</span>
+        </div>
+      `).join("");
+    }
+
+    function limparHistorico() {
+      localStorage.removeItem("historico");
+      location.reload();
+    }
+  </script>
+
+</body>
+</html>

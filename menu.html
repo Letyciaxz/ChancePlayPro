@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChancePlay Menu</title>
+
+    <link rel="stylesheet" href="css/menu.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="top-header">
+
+        <div class="logo">
+            Chance <span>Play</span>
+        </div>
+
+        <div class="menu-buttons">
+            <button class="menu-btn active">JOGOS</button>
+            <button class="menu-btn" onclick="window.location.href='historico.html'">
+    HISTÓRICO
+</button>
+
+    </header>
+
+    <div class="status-bar">
+
+        <div class="status-item">
+            <span class="status-dot cyan"></span>
+            6 Calculadoras
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="status-item">
+            <span class="status-dot purple"></span>
+            matematica aplicada
+        </div>
+
+    </div>
+
+    <main class="main-content">
+
+        <h1>Selecione o Jogo</h1>
+
+        <p>
+            Escolha uma calculadora de probabilidade
+        </p>
+
+        <section class="games-grid">
+
+           <div class="game-card" onclick="window.location.href='megacena.html'">
+
+    <div class="tag">LOTERIA</div>
+
+    <div class="icon-box">🎱</div>
+
+    <h2>Mega-Sena</h2>
+
+                <span>
+                    Probabilidade de acertar 6, 5
+                    <br>
+                    ou 4 números
+                </span>
+
+            </div>
+
+            </div>
+
+            <!-- Baralho -->
+           <div class="game-card" onclick="window.location.href='baralho.html'">
+
+                <div class="tag">CARTAS</div>
+
+                <div class="icon-box">🃏</div>
+
+                <h2>Baralho</h2>
+
+                <span>
+                    Probabilidade de tirar cartas
+                    <br>
+                    específicas
+                </span>
+
+            </div>
+
+            <!-- Dado -->
+                       <div class="game-card" onclick="window.location.href='dado.html'">
+
+                <div class="tag">CLÁSSICO</div>
+
+                <div class="icon-box">🎲</div>
+
+                <h2>Dado</h2>
+
+                <span>
+                    Chances de resultados em 1, 2
+                    <br>
+                    ou 3 dados
+                </span>
+
+            </div>
+
+            <!-- Dominó -->
+            <div class="game-card" onclick="window.location.href='domino.html'">
+
+                <div class="tag">PEÇAS</div>
+
+                <div class="icon-box">🀱</div>
+
+                <h2>Dominó</h2>
+
+                <span>
+                    Probabilidade de tirar peças
+                    <br>
+                    específicas
+                </span>
+
+            </div>
+
+            <!-- Moeda -->
+            <div class="game-card" onclick="window.location.href='moeda.html'">
+
+                <div class="tag">SIMPLES</div>
+
+                <div class="icon-box">🪙</div>
+
+                <h2>Moeda</h2>
+
+                <span>
+                    Cara ou coroa — sequências e
+                    <br>
+                    probabilidades
+                </span>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

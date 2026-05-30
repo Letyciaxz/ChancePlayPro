@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dominó | ChancePlay</title>
+
+  <link rel="stylesheet" href="css/domino.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">
+    <span>Chance</span> Play
+  </div>
+
+  <div class="nav-buttons">
+    <button onclick="window.location.href='menu.html'">JOGOS</button>
+    <button onclick="window.location.href='historico.html'">HISTÓRICO</button>
+  </div>
+</header>
+
+<main class="container">
+
+  <button class="back-btn" onclick="window.location.href='menu.html'">
+    ← VOLTAR
+  </button>
+
+  <section class="game-title">
+    <div class="icon-box">🀱</div>
+
+    <div>
+      <h1>Dominó</h1>
+      <p>28 peças — probabilidade de tirada</p>
+    </div>
+  </section>
+
+  <section class="panel">
+
+    <h2>SELECIONE A PEÇA</h2>
+
+    <label>PEÇAS RESTANTES NO MONTE</label>
+    <input type="number" id="pecasRestantes" value="28" min="1" max="28">
+
+    <div class="domino-grid">
+
+      <button class="domino-piece active" data-peca="0|0"><span>0</span><span>0</span></button>
+      <button class="domino-piece" data-peca="0|1"><span>0</span><span>1</span></button>
+      <button class="domino-piece" data-peca="0|2"><span>0</span><span>2</span></button>
+      <button class="domino-piece" data-peca="0|3"><span>0</span><span>3</span></button>
+      <button class="domino-piece" data-peca="0|4"><span>0</span><span>4</span></button>
+      <button class="domino-piece" data-peca="0|5"><span>0</span><span>5</span></button>
+      <button class="domino-piece" data-peca="0|6"><span>0</span><span>6</span></button>
+
+      <button class="domino-piece" data-peca="1|1"><span>1</span><span>1</span></button>
+      <button class="domino-piece" data-peca="1|2"><span>1</span><span>2</span></button>
+      <button class="domino-piece" data-peca="1|3"><span>1</span><span>3</span></button>
+      <button class="domino-piece" data-peca="1|4"><span>1</span><span>4</span></button>
+      <button class="domino-piece" data-peca="1|5"><span>1</span><span>5</span></button>
+      <button class="domino-piece" data-peca="1|6"><span>1</span><span>6</span></button>
+
+      <button class="domino-piece" data-peca="2|2"><span>2</span><span>2</span></button>
+      <button class="domino-piece" data-peca="2|3"><span>2</span><span>3</span></button>
+      <button class="domino-piece" data-peca="2|4"><span>2</span><span>4</span></button>
+      <button class="domino-piece" data-peca="2|5"><span>2</span><span>5</span></button>
+      <button class="domino-piece" data-peca="2|6"><span>2</span><span>6</span></button>
+
+      <button class="domino-piece" data-peca="3|3"><span>3</span><span>3</span></button>
+      <button class="domino-piece" data-peca="3|4"><span>3</span><span>4</span></button>
+      <button class="domino-piece" data-peca="3|5"><span>3</span><span>5</span></button>
+      <button class="domino-piece" data-peca="3|6"><span>3</span><span>6</span></button>
+
+      <button class="domino-piece" data-peca="4|4"><span>4</span><span>4</span></button>
+      <button class="domino-piece" data-peca="4|5"><span>4</span><span>5</span></button>
+      <button class="domino-piece" data-peca="4|6"><span>4</span><span>6</span></button>
+
+      <button class="domino-piece" data-peca="5|5"><span>5</span><span>5</span></button>
+      <button class="domino-piece" data-peca="5|6"><span>5</span><span>6</span></button>
+
+      <button class="domino-piece" data-peca="6|6"><span>6</span><span>6</span></button>
+
+    </div>
+
+    <button class="calc-btn" onclick="salvarDomino()">
+      CALCULAR
+    </button>
+
+  </section>
+
+</main>
+
+<script src="js/jogos.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega-Sena | ChancePlay</title>
+
+  <link rel="stylesheet" href="css/megacena.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">
+    <span class="blue">Chance</span> Play
+  </div>
+
+  <div class="header-buttons">
+    <button onclick="window.location.href='menu.html'">
+      JOGOS
+    </button>
+
+    <button onclick="window.location.href='historico.html'">
+      HISTÓRICO
+    </button>
+  </div>
+</header>
+
+<main class="container">
+
+  <button class="back-btn" onclick="window.location.href='menu.html'">
+    ← VOLTAR
+  </button>
+
+  <section class="game-title">
+    <div class="icon-box">
+      🎱
+    </div>
+
+    <div>
+      <h1>Mega-Sena</h1>
+      <p>Sorteio de 6 de 60 números</p>
+    </div>
+  </section>
+
+  <section class="content">
+
+    <div class="numbers-box">
+
+      <h2>SEUS NÚMEROS</h2>
+
+      <p class="subtitle">
+        Selecione entre 6 e 15 números
+      </p>
+
+      <div class="numbers-grid">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>10</button>
+
+        <button>11</button>
+        <button>12</button>
+        <button>13</button>
+        <button>14</button>
+        <button>15</button>
+        <button>16</button>
+        <button>17</button>
+        <button>18</button>
+        <button>19</button>
+        <button>20</button>
+
+        <button>21</button>
+        <button>22</button>
+        <button>23</button>
+        <button>24</button>
+        <button>25</button>
+        <button>26</button>
+        <button>27</button>
+        <button>28</button>
+        <button>29</button>
+        <button>30</button>
+
+        <button>31</button>
+        <button>32</button>
+        <button>33</button>
+        <button>34</button>
+        <button>35</button>
+        <button>36</button>
+        <button>37</button>
+        <button>38</button>
+        <button>39</button>
+        <button>40</button>
+
+        <button>41</button>
+        <button>42</button>
+        <button>43</button>
+        <button>44</button>
+        <button>45</button>
+        <button>46</button>
+        <button>47</button>
+        <button>48</button>
+        <button>49</button>
+        <button>50</button>
+
+        <button>51</button>
+        <button>52</button>
+        <button>53</button>
+        <button>54</button>
+        <button>55</button>
+        <button>56</button>
+        <button>57</button>
+        <button>58</button>
+        <button>59</button>
+        <button>60</button>
+      </div>
+
+      <div class="selected">
+        Selecionados: 0
+      </div>
+
+    </div>
+
+    <div class="config-box">
+
+      <h2>CONFIGURAÇÃO</h2>
+
+      <label>ACERTAR</label>
+
+      <select id="tipoMega">
+        <option>Sena (6 de 6)</option>
+        <option>Quina (5 de 6)</option>
+        <option>Quadra (4 de 6)</option>
+      </select>
+
+      <label>APOSTAS</label>
+
+      <input id="apostasMega" type="number" value="1" min="1">
+
+      <button class="calc-btn" onclick="salvarMegaSena()">
+        CALCULAR
+      </button>
+
+    </div>
+
+  </section>
+
+</main>
+
+<script src="js/jogos.js"></script>
+
+</body>
+</html>

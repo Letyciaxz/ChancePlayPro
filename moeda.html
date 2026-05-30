@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moeda | ChancePlay</title>
+
+  <link rel="stylesheet" href="css/moeda.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">
+    <span>Chance</span> Play
+  </div>
+
+  <div class="nav-buttons">
+    <button onclick="window.location.href='menu.html'">JOGOS</button>
+    <button onclick="window.location.href='historico.html'">HISTÓRICO</button>
+  </div>
+</header>
+
+<main class="container">
+
+  <button class="back-btn" onclick="window.location.href='menu.html'">
+    ← VOLTAR
+  </button>
+
+  <section class="game-title">
+    <div class="icon-box">🪙</div>
+
+    <div>
+      <h1>Moeda</h1>
+      <p>Cara ou coroa — sequências</p>
+    </div>
+  </section>
+
+  <section class="panel">
+
+    <h2>CONFIGURAÇÃO</h2>
+
+    <div class="coin-area">
+      <button class="coin" id="coin" onclick="flipCoin()">
+        🪙
+      </button>
+
+      <p>Clique para jogar</p>
+    </div>
+
+    <label>NÚMERO DE LANÇAMENTOS</label>
+    <input id="lancamentosMoeda" type="number" value="3" min="1" max="20">
+
+    <label>RESULTADO DESEJADO</label>
+    <select id="resultadoMoeda">
+      <option>Exatamente N caras</option>
+      <option>Pelo menos N caras</option>
+      <option>Todas caras</option>
+      <option>Nenhuma cara</option>
+    </select>
+
+    <label>N (NÚMERO DE CARAS)</label>
+    <input id="numeroCaras" type="number" value="3" min="0" max="20">
+
+    <button class="calc-btn" onclick="salvarMoeda()">
+      CALCULAR
+    </button>
+
+  </section>
+
+</main>
+
+<script src="js/jogos.js"></script>
+
+</body>
+</html>

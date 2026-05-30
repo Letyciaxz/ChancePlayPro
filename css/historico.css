@@ -1,0 +1,288 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#020817;
+    color:white;
+    min-height:100vh;
+    overflow:hidden;
+    font-family:'Rajdhani', sans-serif;
+    position:relative;
+}
+
+/* GRID FUNDO */
+
+.background-grid{
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+
+    background:
+        linear-gradient(rgba(0,183,255,0.06) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,183,255,0.06) 1px, transparent 1px);
+
+    background-size:56px 56px;
+    z-index:-2;
+}
+
+/* HEADER */
+
+.header{
+    width:100%;
+    height:80px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    padding:0 28px;
+
+    border-bottom:1px solid rgba(0,183,255,0.25);
+
+    background:rgba(2,8,23,0.95);
+
+    backdrop-filter:blur(10px);
+}
+
+/* LOGO */
+
+.logo{
+    font-size:28px;
+    font-family:'Orbitron', sans-serif;
+    font-weight:700;
+
+    color:#00cfff;
+}
+
+.logo span{
+    color:#94a3b8;
+    font-weight:400;
+}
+
+/* BOTÕES */
+
+.nav-buttons{
+    display:flex;
+    gap:14px;
+}
+
+.nav-btn{
+    text-decoration:none;
+
+    color:#6b7280;
+
+    border:1px solid rgba(0,183,255,0.2);
+
+    padding:12px 26px;
+
+    border-radius:30px;
+
+    font-size:14px;
+    font-family:'Orbitron', sans-serif;
+
+    transition:0.3s;
+}
+
+.nav-btn:hover{
+    color:#00cfff;
+    border-color:#00cfff;
+}
+
+.nav-btn.active{
+    color:#00cfff;
+
+    border:1px solid #00cfff;
+
+    box-shadow:
+        0 0 10px rgba(0,183,255,0.25);
+}
+
+/* CONTAINER */
+
+.history-container{
+    width:100%;
+    max-width:900px;
+
+    margin:auto;
+
+    padding-top:40px;
+}
+
+/* TÍTULO */
+
+.title-area{
+    margin-bottom:120px;
+}
+
+.title-area h1{
+    font-size:62px;
+
+    font-family:'Rajdhani', sans-serif;
+    font-weight:700;
+
+    margin-bottom:10px;
+}
+
+.title-area p{
+    color:#7aa2d6;
+
+    font-size:26px;
+}
+
+/* SEM HISTÓRICO */
+
+.empty-history{
+    width:100%;
+
+    display:flex;
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    margin-top:100px;
+}
+
+/* ÍCONE */
+
+.history-icon{
+    width:90px;
+    height:90px;
+
+    border-radius:24px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:42px;
+
+    background:#1e293b;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    margin-bottom:28px;
+}
+
+/* TEXTOS */
+
+.empty-history h2{
+    font-size:42px;
+
+    color:#5f7da8;
+
+    margin-bottom:10px;
+}
+
+.empty-history p{
+    color:#547199;
+
+    font-size:24px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .header{
+        padding:0 18px;
+    }
+
+    .logo{
+        font-size:22px;
+    }
+
+    .nav-btn{
+        padding:10px 18px;
+        font-size:12px;
+    }
+
+    .history-container{
+        padding:30px 20px;
+    }
+
+    .title-area h1{
+        font-size:44px;
+    }
+
+    .title-area p{
+        font-size:20px;
+    }
+
+    .empty-history h2{
+        font-size:30px;
+        text-align:center;
+    }
+
+    .empty-history p{
+        font-size:18px;
+        text-align:center;
+    }
+
+}/* CARDS DO HISTÓRICO */
+
+.history-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.history-card{
+    background:rgba(15,23,42,.9);
+    border:1px solid rgba(0,191,255,.25);
+    border-radius:18px;
+    padding:22px;
+    transition:.3s;
+}
+
+.history-card:hover{
+    border-color:#00cfff;
+    box-shadow:0 0 15px rgba(0,191,255,.15);
+}
+
+.history-card h2{
+    color:#00cfff;
+    margin-bottom:12px;
+    font-size:24px;
+}
+
+.history-card p{
+    color:#94a3b8;
+    margin-bottom:8px;
+    font-size:16px;
+}
+
+.history-card span{
+    color:#64748b;
+    font-size:14px;
+}
+
+.clear-btn{
+    margin-top:25px;
+
+    background:transparent;
+
+    border:1px solid rgba(0,191,255,.3);
+
+    color:#00cfff;
+
+    padding:14px 28px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-family:'Rajdhani',sans-serif;
+
+    transition:.3s;
+}
+
+.clear-btn:hover{
+    border-color:#00cfff;
+    box-shadow:0 0 15px rgba(0,191,255,.25);
+}
