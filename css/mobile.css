@@ -1,0 +1,294 @@
+/* =========================
+   MOBILE GERAL
+========================= */
+
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .header,
+  .top-header {
+    height: auto;
+    flex-direction: column;
+    gap: 15px;
+    padding: 18px;
+    text-align: center;
+  }
+
+  .logo,
+  .header-logo {
+    font-size: 24px;
+  }
+
+  .nav-buttons,
+  .menu-buttons,
+  .header-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-buttons button,
+  .menu-btn,
+  .header-buttons button,
+  .nav-btn {
+    padding: 9px 18px;
+    font-size: 12px;
+  }
+
+  .container,
+  .main-content,
+  .history-container {
+    width: 100%;
+    padding: 24px 16px;
+  }
+
+  .game-title {
+    align-items: center;
+    gap: 14px;
+  }
+
+  .game-title h1 {
+    font-size: 28px;
+  }
+
+  .game-title p {
+    font-size: 16px;
+  }
+
+  .icon-box {
+    width: 58px;
+    height: 58px;
+    font-size: 28px;
+  }
+}
+
+/* =========================
+   TELA PRINCIPAL MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .badge {
+    font-size: 10px;
+    padding: 10px 16px;
+    letter-spacing: 1.5px;
+  }
+
+  .logo {
+    font-size: 52px;
+  }
+
+  .pro-text {
+    font-size: 30px;
+    letter-spacing: 6px;
+  }
+
+  .description {
+    font-size: 17px;
+    padding: 0 18px;
+    line-height: 1.6;
+  }
+
+  .start-btn {
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  .corner {
+    width: 55px;
+    height: 55px;
+  }
+}
+
+/* =========================
+   MENU MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .status-bar {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 14px 18px;
+    justify-content: center;
+  }
+
+  .main-content h1 {
+    font-size: 38px;
+    text-align: center;
+  }
+
+  .main-content p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  .games-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+    padding: 0 10px;
+  }
+
+  .game-card {
+    min-height: 230px;
+    padding: 30px 20px;
+  }
+
+  .game-card h2 {
+    font-size: 30px;
+  }
+
+  .game-card span,
+  .game-card p {
+    font-size: 17px;
+  }
+}
+
+/* =========================
+   MEGA-SENA MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .numbers-box,
+  .config-box,
+  .panel {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .numbers-grid {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 8px;
+  }
+
+  .numbers-grid button {
+    height: 42px;
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   JOGO DO BICHO MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .animal-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .animal-card {
+    height: 58px;
+  }
+
+  .animal-card span {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 430px) {
+  .animal-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =========================
+   DADO MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .dice-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .dice-card {
+    height: 65px;
+    font-size: 32px;
+  }
+}
+
+/* =========================
+   DOMINÓ MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .domino-grid {
+    justify-content: center;
+  }
+
+  .domino-piece {
+    width: 58px;
+    height: 38px;
+  }
+}
+
+/* =========================
+   MOEDA MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .coin {
+    width: 110px;
+    height: 110px;
+    font-size: 40px;
+  }
+
+  input,
+  select {
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+/* =========================
+   HISTÓRICO MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .title-area {
+    margin-bottom: 50px;
+  }
+
+  .title-area h1 {
+    font-size: 42px;
+  }
+
+  .title-area p {
+    font-size: 18px;
+  }
+
+  .empty-history h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .empty-history p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .history-card {
+    padding: 18px;
+  }
+
+  .history-card h2 {
+    font-size: 22px;
+  }
+
+  .history-card p {
+    font-size: 15px;
+  }
+}
